@@ -50,8 +50,13 @@
 
 .logo a img
 {
-    display: flex;
-    width: 7rem;
+        width: 7rem;
+    animation-name: rotacion;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in;
+   animation-duration: 10s;
+   animation-delay: 1s;
+
 }
 
 .logo p
@@ -63,6 +68,12 @@
     grid-column: 2/3;
     justify-content: center;
 }
+
+.logo p:hover
+{
+    font-size: 3.5rem;
+}
+
 
 .iconos
 {
@@ -145,12 +156,6 @@ nav ul li
 {
     display: flex;
     padding: 1rem 0rem 1rem 0rem;
-}
-
-.videoSection
-{
-   display: flex;
-   justify-self: center;
 }
 
 .videoSection video
@@ -281,9 +286,7 @@ nav ul li
 
     .iconos img
     {
-        padding-left: 1rem;
-        width: 1rem;
-        height: 1rem;
+        transform: rotate(360deg);
     }
 
     nav ul li
@@ -295,3 +298,19 @@ nav ul li
         display: inline-block;
     }
 }
+
+@keyframes rotacion {
+
+    0%{transform: rotate (36deg);}
+    10%{transform: rotate (72deg);}
+    20%{transform: rotate (108deg);}
+    30%{transform: rotate (144deg);}
+    40%{transform: rotate (180deg);}
+    50%{transform: rotate (216deg);}
+    60%{transform: rotate (252deg);}
+    70%{transform: rotate (288deg);}
+    80%{transform: rotate (324deg);}
+    90%{transform: rotate (360deg);}
+    100%{transform: rotate (0deg);}
+    
+} 
