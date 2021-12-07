@@ -51,6 +51,12 @@
 .logo a img
 {
     width: 7rem;
+    animation-name: rotacion;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in;
+   animation-duration: 1s;
+   animation-delay: 0.5s;
+
 }
 
 .logo p
@@ -289,3 +295,8 @@ nav ul li
     }
 }
 
+@keyframes rotacion {
+
+    100% {-webkit-transform: rotate(360deg);}
+    
+} 
