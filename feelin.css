@@ -54,8 +54,8 @@
     animation-name: rotacion;
    animation-iteration-count: infinite;
    animation-timing-function: ease-in;
-   animation-duration: 10s;
-   animation-delay: 1s;
+   animation-duration: 1s;
+   animation-delay: 0.5s;
 
 }
 
@@ -309,16 +309,6 @@ nav ul li:hover
 
 @keyframes rotacion {
 
-    0%{transform: rotate (36deg);}
-    10%{transform: rotate (72deg);}
-    20%{transform: rotate (108deg);}
-    30%{transform: rotate (144deg);}
-    40%{transform: rotate (180deg);}
-    50%{transform: rotate (216deg);}
-    60%{transform: rotate (252deg);}
-    70%{transform: rotate (288deg);}
-    80%{transform: rotate (324deg);}
-    90%{transform: rotate (360deg);}
-    100%{transform: rotate (0deg);}
+    100% {-webkit-transform: rotate(360deg);}
     
 } 
